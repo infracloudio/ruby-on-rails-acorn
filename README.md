@@ -1,4 +1,4 @@
-## ROR Acornfile
+## Ruby on Rails Acornfile
 
 ##### TL: DR
 ```
@@ -12,7 +12,11 @@ This sample app has been create following getting started section of Ruby on rai
 
 - If you want to just deploy the application with defaults use below command
 ```
-acorn run -n ror .
+$ acorn run -n ror .
+```
+- Ruby on Rails acorn image is pushed to ghcr you can directly run it passing the image name to acorn run command
+```
+$ acorn run ghcr.io/infracloudio/ruby-on-rails-acorn:v0.0.1
 ```
 
 As this Application just include the simple Blog Post Application which can be easily customized based on your requirement . You can follow all the Ruby on Rails docs.
