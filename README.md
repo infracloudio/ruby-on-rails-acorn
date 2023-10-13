@@ -1,25 +1,23 @@
 ## Ruby on Rails Acornfile
 
-##### TL: DR
-```
-acorn run -n ror .
-```
+Here we have the Simple `Articles App` using Ruby on Rails framework and we have the Acornfile which can be used to deploy it on Acorn SaaS Platform.
 
-Hi, here we have the Simple Blog Post `Ruby on Rails` framework Application and we are going to use Acornfile to deploy it on Kuberenetes.
-This sample app has been create following getting started section of Ruby on rails. 
+##### Deploying the App on SaaS Platform.
+- First you need to login to saas platform using your github username.Once the Account is setup you need to click on create and select `from acorn image` where you need to select `name`, `region` and `Acron Image`. For Ruby on rails below is the latest image
+```
+ghcr.io/infracloudio/ruby-on-rails-acorn:v0.0.2
+```
+Once you click on `Create` Provisioning starts and in some time you app is in Running state and you can access it using the given URL.
 
-###### Steps:
+##### Checking App logs
+- You can click on 4 dots on the right side of your app on the UI and click on View Logs through which you can see you app Logs.
 
-- If you want to just deploy the application with defaults use below command
-```
-$ acorn run -n ror .
-```
-- Ruby on Rails acorn image is pushed to ghcr you can directly run it passing the image name to acorn run command
-```
-$ acorn run ghcr.io/infracloudio/ruby-on-rails-acorn:v0.0.1
-```
+##### Removing the App
+- If you simply want to remove the App . Click on the 4 dots and click `Remove` which will remove your app.
 
-As this Application just include the simple Blog Post Application which can be easily customized based on your requirement . You can follow all the Ruby on Rails docs.
+---
+
+As this Application just include simple `Articles App` which can be easily customized based on your requirement . You can follow all the Ruby on Rails docs.
 
 - [Getting Started](https://guides.rubyonrails.org/getting_started.html)
 
