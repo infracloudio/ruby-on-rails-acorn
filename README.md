@@ -7,10 +7,10 @@ Here we have the Simple `Articles App` using Ruby on Rails framework and we have
 ```
 ghcr.io/infracloudio/ruby-on-rails-acorn:v0.0.2
 ```
-Once you click on `Create` Provisioning starts and in some time you app is in Running state and you can access it using the given URL.
+Once you click on `Create` , Provisioning starts and in some time your app is in Running state and you can access it using the given URL.
 
 ##### Checking App logs
-- You can click on 4 dots on the right side of your app on the UI and click on View Logs through which you can see you app Logs.
+- You can click on 4 dots on the right side of your app on the UI and click on View Logs through which you can see your app Logs.
 
 ##### Removing the App
 - If you simply want to remove the App . Click on the 4 dots and click `Remove` which will remove your app.
