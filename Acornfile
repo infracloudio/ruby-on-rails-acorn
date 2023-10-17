@@ -5,6 +5,11 @@ containers: web: {
     context:    "./src"
     dockerfile: "./src/Dockerfile"
   }
+  if args.dev{
+    dirs: {
+      "/app": "./src"
+    }
+  }
   ports: publish: "3000:3000/http"
   env: {
     MARIADB_USER:          "@{service.db.secrets.admin.username}"
