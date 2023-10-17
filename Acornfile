@@ -1,3 +1,7 @@
+name:        "Ruby on Rails Sample Acorn"
+description: "Acorn running a sample Ruby on Rails app"
+readme:      "./README.md"
+
 services: db: image: "ghcr.io/acorn-io/mariadb:v1.0.0"
 
 containers: web: {
