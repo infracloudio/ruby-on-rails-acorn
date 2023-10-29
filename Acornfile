@@ -1,6 +1,7 @@
 name:        "Ruby on Rails Sample Acorn"
 description: "Acorn running a sample Ruby on Rails app"
 readme:      "./README.md"
+icon:        "./rails.svg"
 
 args: {
   rordbname: "rordb"
