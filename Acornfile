@@ -1,14 +1,25 @@
 name:        "Ruby on Rails Sample Acorn"
 description: "Acorn running a sample Ruby on Rails app"
 readme:      "./README.md"
+icon:        "./rails.svg"
 
-services: db: image: "ghcr.io/acorn-io/mariadb:v10.11.5-1"
+args: {
+  rordbname: "rordb"
+}
+
+services: db: {
+  image: "ghcr.io/acorn-io/mariadb:v10.11.5-1"
+    serviceArgs: {
+      dbName: args.rordbname
+  }
+}
 
 containers: web: {
   build: {
     context:    "./src"
     dockerfile: "./src/Dockerfile"
   }
+  consumes: ["db"]
   if args.dev{
     dirs: {
       "/app": "./src"
